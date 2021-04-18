@@ -9,10 +9,12 @@ UIS.InputBegan:Connect(function(key,C)
 	end
 end)
 
+
 script.Parent.Equipped:Connect(function()
 	script.Parent.RemoteEvent:FireServer("EQ")
 	Equipped = true
 end)
+
 
 script.Parent.Unequipped:Connect(function()
 	script.Parent.RemoteEvent:FireServer("UEQ")
